@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeadlineVartman</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <!-- header first container -->
+        <div class="headFirstCont">
+            <figure class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </figure>
+
+            <div class="socialLinks">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-telegram"></i>
+            </div>
+
+            <div class="searchBar">
+                <form action="#" id="form" name="serachResult" onsubmit="searchText()">
+                    <input id="search" name="newsSearch" type="text" placeholder="search for topic">
+                    <button name="newsSearch" id="searchBtn" type="submit">  
+                        <i name="newsSearch" class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- header first container end -->
+
+        <!-- header 2nd container -->
+        <div class="headSecondCont">
+            <a class="bigScreenRes" href="index.html">
+                <p>Home</p>
+            </a>
+            <p onclick="fetchCategory(event)" class="category bigScreenRes">Business</p>
+            <p onclick="fetchCategory(event)" class="category bigScreenRes">Entertainment</p>
+            <p onclick="fetchCategory(event)" class="category bigScreenRes">General</p>
+            <p onclick="fetchCategory(event)" class="category bigScreenRes">Health</p>
+            <p onclick="fetchCategory(event)" class="category bigScreenRes">Science</p>
+            <p onclick="fetchCategory(event)" class="category bigScreenRes">Sports</p>
+            <p onclick="fetchCategory(event)" class="category bigScreenRes">Technology</p>
+            <!-- hamburger menu -->
+            <i id="hamburger" onclick="hamburger()" class="fa-solid fa-bars"></i>
+            <i id="hamX" class="fa-solid fa-x"></i>
+            <div id="hamburgerMenuSec" class="hamburgerMenuSec">
+                <div class="hamburgerMenu">
+                    <a href="index.html">
+                        <p>Home</p>
+                    </a>
+                    <p onclick="fetchCategory(event)" class="category">Business</p>
+                    <p onclick="fetchCategory(event)" class="category">Entertainment</p>
+                    <p onclick="fetchCategory(event)" class="category">General</p>
+                    <p onclick="fetchCategory(event)" class="category">Health</p>
+                    <p onclick="fetchCategory(event)" class="category">Science</p>
+                    <p onclick="fetchCategory(event)" class="category">Sports</p>
+                    <p onclick="fetchCategory(event)" class="category">Technology</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- header 2nd container end -->
+
+    </header>
+    <!-- header end -->
+
+    <!-- Home page news section -->
+    <section class="homeNewsSec" id="homeNewsSec">
+        <!-- <h2>Headlines - INDIA</h2> -->
+        <!-- <div class="homeNewsCont">
+            <div class="homeNews">
+                <div class="newsDetailCont">
+                    <div class="newsDetail">
+                        <button class="readMore">Read More</button>
+                        <p class="publishDate">2023-02-22</p>
+                    </div>
+
+                    <div class="title" >
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus quo, unde similique accusantium exercitationem quia tempore quas molestias soluta.</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+    </section>
+    <!-- Home page news section end -->
+
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/e1534a995a.js" crossorigin="anonymous"></script>
+</body>
+</html>
